@@ -100,8 +100,8 @@
                 <h1 class="display-5 fw-bold lh-1 mb-3">Plan Your Perfect Event with JUST EVENTS</h1>
                 <p class="lead">Create unforgettable moments with our expert event planning services. From weddings to corporate events, we handle every detail with precision and style using Bootstrap’s responsive toolkit.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get Started</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
+                    <a href="./contact.html"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get Started</button></a>
+                    <a href="./about.html"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn More</button></a>
                 </div>
             </div>
         </div>
@@ -231,22 +231,22 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="card p-4 shadow-sm">
-                    <form>
+                    <form accept="https://formspree.io/f/xkgvearg" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
                         </div>
                         <div class="mb-3">
                             <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
                         </div>
                         <div class="mb-3">
                             <label for="eventType" class="form-label">Event Type</label>
-                            <select class="form-select" id="eventType" required>
+                            <select class="form-select" id="eventType" name="eventType" required>
                                 <option value="" disabled selected>Select event type</option>
                                 <option value="birthday">Birthday</option>
                                 <option value="corporate">Concert</option>
@@ -260,7 +260,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Additional Details</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your event"></textarea>
+                            <textarea class="form-control" id="message" rows="4" name="message" placeholder="Tell us about your event"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Submit</button>
                     </form>
