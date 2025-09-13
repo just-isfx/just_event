@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUST EVENTS</title>
+    <link href="./Asset/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./Asset/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./Asset/image/justevent-LOGO.jpg" type="image/x-icon">
+    <style>
+        :root {
+            --oxford-blue: #002147;
+            --metallic-gold: #D4AF37;
+            --silver: #C0C0C0;
+        }
+        body {
+            background-color: var(--silver);
+            color: var(--oxford-blue);
+        }
+        .navbar, .footer {
+            background-color: var(--oxford-blue);
+        }
+        .nav-link, .footer p, .footer a {
+            color: var(--metallic-gold) !important;
+        }
+        .nav-link.active {
+            background-color: var(--metallic-gold) !important;
+            color: var(--oxford-blue) !important;
+        }
+        .hero-section {
+            background-color: var(--oxford-blue);
+            color: var(--silver);
+        }
+        .btn-primary {
+            background-color: var(--metallic-gold);
+            border-color: var(--metallic-gold);
+            color: var(--oxford-blue);
+        }
+        .btn-primary:hover {
+            background-color: var(--silver);
+            border-color: var(--silver);
+            color: var(--oxford-blue);
+        }
+        .btn-outline-secondary {
+            border-color: var(--silver);
+            color: var(--silver);
+        }
+        .btn-outline-secondary:hover {
+            background-color: var(--metallic-gold);
+            color: var(--oxford-blue);
+        }
+        .card {
+            border-color: var(--oxford-blue);
+        }
+        .card h3, .card a {
+            color: var(--oxford-blue);
+        }
+        .card:hover {
+            background-color: var(--silver);
+        }
+        .why-choose-section {
+            background-color: var(--oxford-blue);
+            color: var(--silver);
+        }
+        .form-section {
+            background-color: var(--silver);
+        }
+        .form-control:focus {
+            border-color: var(--metallic-gold);
+            box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+        }
+        .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="container-fluid">
+        <header class="d-flex flex-wrap justify-content-center py-3 navbar">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                <span class="fs-4" style="font-family: 'Segoe Script', cursive; font-weight: bolder; color: var(--metallic-gold);">JUST EVENTS</span>
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container-fluid hero-section">
+        <div class="row flex-lg-row-reverse align-items-center g-0">
+            <div class="col-12 col-sm-8 col-lg-6">
+                <img src="./Asset/image/download (23).jpeg" class="d-block mx-lg-auto img-fluid" alt="Event Image" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6 py-5">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Plan Your Perfect Event with JUST EVENTS</h1>
+                <p class="lead">Create unforgettable moments with our expert event planning services. From weddings to corporate events, we handle every detail with precision and style using Bootstrap’s responsive toolkit.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get Started</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="container-fluid">
+        <h2 class="text-center my-4" style="font-family: Comic Sans MS;">Our Services</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./Asset/image/download (27).jpeg" class="card-img-top" alt="Lighting">
+                    <div class="card-body">
+                        <h3 class="card-title">Lighting</h3>
+                        <p class="card-text">Transform your event with stunning lighting designs.</p>
+                        <a href="#" class="icon-link">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./Asset/image/download (19).jpeg" class="card-img-top" alt="Speakers">
+                    <div class="card-body">
+                        <h3 class="card-title">Speakers</h3>
+                        <p class="card-text">High-quality audio solutions for any event size.</p>
+                        <a href="#" class="icon-link">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./Asset/image/download (28).jpeg" class="card-img-top" alt="Decor">
+                    <div class="card-body">
+                        <h3 class="card-title">Decoration</h3>
+                        <p class="card-text">Elegant and customized decor for all occasions.</p>
+                        <a href="#" class="icon-link">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./Asset/image/Catering wedding _ Premium Photo.jpeg" class="card-img-top" alt="Catering">
+                    <div class="card-body">
+                        <h3 class="card-title">Catering</h3>
+                        <p class="card-text">Delicious menus tailored to your event.</p>
+                        <a href="#" class="icon-link">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./Asset/image/Buscando la mejor fotografía.jpeg" class="card-img-top" alt="Photography">
+                    <div class="card-body">
+                        <h3 class="card-title">Photography</h3>
+                        <p class="card-text">Capture every moment with professional photography.</p>
+                        <a href="#" class="icon-link">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./Asset/image/consert.jpeg" class="card-img-top" alt="Entertainment">
+                    <div class="card-body">
+                        <h3 class="card-title">Entertainment</h3>
+                        <p class="card-text">Live bands, DJs, and more to keep guests engaged.</p>
+                        <a href="#" class="icon-link">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./Asset/image/download (10).jpeg" class="card-img-top" alt="Venue Setup">
+                    <div class="card-body">
+                        <h3 class="card-title">Venue Setup</h3>
+                        <p class="card-text">Seamless venue preparation and management.</p>
+                        <a href="#" class="icon-link">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./Asset/image/Business.jpeg" class="card-img-top" alt="Event Planning">
+                    <div class="card-body">
+                        <h3 class="card-title">Event Planning</h3>
+                        <p class="card-text">Comprehensive planning for stress-free events.</p>
+                        <a href="#" class="icon-link">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose JUST EVENTS Section -->
+    <div class="container-fluid my-5 why-choose-section py-5">
+        <h2 class="text-center mb-4">Why Choose JUST EVENTS</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h4 style="color: #D4AF37;">Expert Team</h4>
+                <p>Our experienced planners bring your vision to life with precision.</p>
+            </div>
+            <div class="col-md-4">
+                <h4 style="color: #D4AF37;">Custom Solutions</h4>
+                <p>Tailored services to match your unique event needs.</p>
+            </div>
+            <div class="col-md-4">
+                <h4 style="color: #D4AF37;">Reliable Service</h4>
+                <p>Trusted by clients for consistent, high-quality results.</p>
+            </div>
+            <div class="col-md-4">
+                <h4  style="color: #D4AF37;">Innovative Designs</h4>
+                <p>Creative and modern designs that impress your guests.</p>
+            </div>
+            <div class="col-md-4">
+                <h4 style="color: #D4AF37;">Stress-Free Planning</h4>
+                <p>We handle every detail, so you can enjoy your event.</p>
+            </div>
+            <div class="col-md-4">
+                <h4 style="color: #D4AF37;">Competitive Pricing</h4>
+                <p>Premium services at affordable rates for all budgets.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Form Section -->
+    <div class="container-fluid my-5 form-section">
+        <h2 class="text-center mb-4">Register for Your Event</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card p-4 shadow-sm">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="eventType" class="form-label">Event Type</label>
+                            <select class="form-select" id="eventType" required>
+                                <option value="" disabled selected>Select event type</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="corporate">Concert</option>
+                                <option value="Confrences">Confrences</option>
+                                <option value="convention">convention</option>
+                                <option value="Proposal">Proposal</option>
+                                <option value="Suprices">Suprices</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Additional Details</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your event"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer py-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>JUST EVENTS</h5>
+                    <p>Creating memorable experiences with expert event planning.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@justevents.com<br>Phone: +234 (906) 057-7702</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2025 JUST EVENTS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Asset/js/bootstrap.min.js"></script>
+</body>
+</html>

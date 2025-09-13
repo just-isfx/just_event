@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - JUST EVENTS</title>
+    <link href="./Asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./Asset/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./Asset/image/justevent-LOGO.jpg" type="image/x-icon">
+    <style>
+        :root {
+            --oxford-blue: #002147;
+            --metallic-gold: #D4AF37;
+            --silver: #C0C0C0;
+        }
+        body {
+            background-color: var(--silver);
+            color: var(--oxford-blue);
+        }
+        .navbar, .footer {
+            background-color: var(--oxford-blue);
+        }
+        .nav-link, .footer p, .footer a {
+            color: var(--metallic-gold) !important;
+        }
+        .nav-link.active {
+            background-color: var(--metallic-gold) !important;
+            color: var(--oxford-blue) !important;
+        }
+        .hero-section {
+            background-color: var(--oxford-blue);
+            color: var(--silver);
+        }
+        .btn-primary {
+            background-color: var(--metallic-gold);
+            border-color: var(--metallic-gold);
+            color: var(--oxford-blue);
+        }
+        .btn-primary:hover {
+            background-color: var(--silver);
+            border-color: var(--silver);
+            color: var(--oxford-blue);
+        }
+        .form-control:focus {
+            border-color: var(--metallic-gold);
+            box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+        }
+        .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="container-fluid">
+        <header class="d-flex flex-wrap justify-content-center py-3 navbar">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                <span class="fs-4" style="font-family: 'Segoe Script', cursive; font-weight: bolder; color: var(--metallic-gold);">JUST EVENTS</span>
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- Hero Section -->
+     <div class="px-4 py-5 text-center g-0" style="background-color: #002147;">
+            <h1 class="display-5 fw-bold " style="color: #C0C0C0;">Get in Touch with JUST EVENTS</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead" style="color: #C0C0C0;">We’re here to help you plan your dream event. Reach out to us with any questions or to start planning today!</p>
+            </div>
+        </div>
+
+    <!-- Contact Information Section -->
+    <div class="container-fluid my-5">
+        <h2 class="text-center mb-4">Contact Information</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p>At JUST EVENTS, we value open communication and are ready to assist you with all your event planning needs. Whether you have a question about our services, need a quote, or want to discuss your vision, our team is here to help.</p>
+                <ul class="list-unstyled">
+                    <li><strong>Email:</strong> info@justevents.com</li>
+                    <li><strong>Phone:</strong> (123) 456-7890</li>
+                    <li><strong>Address:</strong> 123 Event Street, Celebration City, 12345</li>
+                    <li><strong>Office Hours:</strong> Monday - Friday, 9 AM - 6 PM</li>
+                </ul>
+                <p>Feel free to reach out via phone or email, or fill out the form below to get started. We aim to respond to all inquiries within 24 hours.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="container-fluid my-5">
+        <h2 class="text-center mb-4">Send Us a Message</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card p-4 shadow-sm">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="6" placeholder="Tell us about your event or inquiry" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container-fluid my-5">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                What types of events do you plan?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We plan a wide range of events, including weddings, corporate events, birthdays, anniversaries, and more. Contact us to discuss your specific needs!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                How far in advance should I book?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We recommend booking at least 1-3 months in advance for larger events, but we can accommodate shorter timelines based on availability.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Do you offer customized packages?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we tailor our services to meet your unique needs and budget. Let’s discuss your vision to create the perfect package.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                When did you start your company?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Just Events have been extablished since 2010, and we have had a good relationship with client that keeps refaring and promoting our company.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                Do you offer customized packages?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we tailor our services to meet your unique needs and budget. Let’s discuss your vision to create the perfect package.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                Do you offer customized packages?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we tailor our services to meet your unique needs and budget. Let’s discuss your vision to create the perfect package.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                Do you offer customized packages?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we tailor our services to meet your unique needs and budget. Let’s discuss your vision to create the perfect package.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                                Do you offer customized packages?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we tailor our services to meet your unique needs and budget. Let’s discuss your vision to create the perfect package.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer py-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>JUST EVENTS</h5>
+                    <p>Creating memorable experiences with expert event planning.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@justevents.com<br>Phone: +234 (906) 057-7702</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2025 JUST EVENTS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Asset/js/bootstrap.min.js"></script>
+</body>
+</html>
